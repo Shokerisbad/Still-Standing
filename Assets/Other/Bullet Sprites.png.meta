@@ -1,0 +1,1204 @@
+fileFormatVersion: 2
+guid: 898c320de59310541bf09360de9916e4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bullet Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1803
+        width: 154
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4692dbfa012b2e9468d3404c27e85156
+      internalID: 155517816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1729
+        width: 173
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda656841d9635a4db9e21a51bcb2c41
+      internalID: 1117571658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 1503
+        width: 227
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32ad34ee1a900447bcc9ebc9c14c9c8
+      internalID: -478698789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1795
+        width: 103
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbaa0f6e16816e488d8fc2895020325
+      internalID: 834224314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1546
+        width: 220
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643ccff7c50cab7438c758c279e012e1
+      internalID: -85331710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 1670
+        width: 130
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ceaa9e813c2fd45a210bff3d604b17
+      internalID: -941026666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 1711
+        width: 59
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd7e5042104a6641a31b30d6a7a95a1
+      internalID: -1250106660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1722
+        width: 35
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328a65a0505fd404aa04ad63aba58275
+      internalID: 537804682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 1546
+        width: 59
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84d5d88dc8de1546a84969ed6209595
+      internalID: 894121100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1573
+        width: 35
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb71e6214762634ea6f7f2dcff94db5
+      internalID: -851359447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1424
+        width: 230
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f496a42291b764ea3c5b66b98dd7a0
+      internalID: 1549038921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1527
+        width: 108
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3455459e2b8ca4d9f05e77ce19cb0f
+      internalID: -1733804148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_33
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1220
+        width: 272
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2c86a93536b264bbaf08e81ebb9f03
+      internalID: 2059292621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_37
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1340
+        width: 164
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f50602a41d9e354988a88c9eb85584c
+      internalID: 1470751596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_38
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1409
+        width: 38
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd40dab271c7f8f4188085e8bbaac401
+      internalID: -285684370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_40
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1316
+        width: 54
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6e4583a8eb32d4c93c3913c3c1280e
+      internalID: -1301780494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_43
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1063
+        width: 190
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5950ee10f93a5a468cb78aec820bb7f
+      internalID: -1494379840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_45
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1062
+        width: 265
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8a1b13c5b9e1e489b5260e5f3015e7
+      internalID: -1642722281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_47
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1212
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8819d3b532e6243a825ed1b5952ea1
+      internalID: 775378124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_48
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 872
+        width: 267
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ad80cc04430484baabadcab9007f39
+      internalID: 1401110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_50
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1101
+        width: 133
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25cdf244866bf4e4abb890b1576b483f
+      internalID: 423864597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_51
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1081
+        width: 61
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797e06251afc8b943a3d7d773df4fe85
+      internalID: 1416931198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_54
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1054
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84957e70ca0a9974ba2d5432b4687cec
+      internalID: 912566488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_55
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 765
+        width: 192
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a28a4e64c3b5245a81afb4621aab8a
+      internalID: 757516456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_56
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 895
+        width: 159
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c362f1f1ec5e85a4f99575bd38f4a7e2
+      internalID: 180733314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_57
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 593
+        width: 199
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2764676853372c94ab79f59d2c335f0d
+      internalID: -1783526025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_59
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 886
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f11bab18da58034ea66005bd9066f65
+      internalID: -603387509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_60
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 887
+        width: 30
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ef5ff4311e2a94ab0c98e813b147de
+      internalID: 1296623180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_63
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 647
+        width: 125
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8cc4d6aeb115643a48e8d8c3b11e3a
+      internalID: 551570987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_64
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 672
+        width: 75
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f133809511e9c94daabc291d53780c7
+      internalID: 388910052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_65
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 723
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b56185d72e7bf1449095c11fb1282a6
+      internalID: 913492136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_67
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 529
+        width: 265
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f7d07403775334f92361e9565c8434
+      internalID: 1456480706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_68
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 457
+        width: 233
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6035deda82b4345b20da2fd887b35e
+      internalID: 1057850298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_72
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 490
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ee937ad6d216d4880897d6ca3dbbed
+      internalID: -261600313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_73
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 495
+        width: 169
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de69043346f618f44b45d61c87054d1f
+      internalID: -1913935903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_74
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 539
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7bc6a3a8ef4ee4b8860b5d46070742
+      internalID: 1344999449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_82
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 132
+        width: 251
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8875f5263ca04b45abb74eb7cc29a63
+      internalID: 724566649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_87
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 321
+        width: 108
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be950a39878b3cf43aafe170e8f38af2
+      internalID: 940177894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_88
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 344
+        width: 166
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923f0ef5fadcca74c892466be59adbfe
+      internalID: -824620744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_89
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 355
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7733cdfd0fc4e47a315d4f9edbf4ad
+      internalID: -1351685680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_90
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 237
+        width: 231
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006012512ffe30d45960d675b529f496
+      internalID: -1857257080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_95
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 97
+        width: 270
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538330a0a7173b44f826ca989d7e7282
+      internalID: -1389428455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_101
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 136
+        width: 128
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0e658d8898e8e49940531e04f3c3ef
+      internalID: -1375929995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_102
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 187
+        width: 166
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b4f74dd1b3a2e4d88db45eea7bce1b
+      internalID: 1227771857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_104
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 172
+        width: 75
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cc8e8ea91bd3a46bbd4e5c10426e0f
+      internalID: 744310886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bullet Sprites_107
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 33
+        width: 163
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3512fc99c30814baaa78b4e2a7fb93
+      internalID: -805307891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bullet Sprites_0: 155517816
+      Bullet Sprites_1: 1117571658
+      Bullet Sprites_10: -1871550351
+      Bullet Sprites_100: 1973389734
+      Bullet Sprites_101: -1375929995
+      Bullet Sprites_102: 1227771857
+      Bullet Sprites_103: 938826574
+      Bullet Sprites_104: 744310886
+      Bullet Sprites_105: -1511268985
+      Bullet Sprites_106: -1886102692
+      Bullet Sprites_107: -805307891
+      Bullet Sprites_108: 2088224806
+      Bullet Sprites_109: -1867319352
+      Bullet Sprites_11: -85331710
+      Bullet Sprites_110: 283669590
+      Bullet Sprites_111: -362098163
+      Bullet Sprites_112: -1678227410
+      Bullet Sprites_113: -1625765288
+      Bullet Sprites_114: -756073153
+      Bullet Sprites_12: -941026666
+      Bullet Sprites_13: -1250106660
+      Bullet Sprites_14: 537804682
+      Bullet Sprites_15: 802696761
+      Bullet Sprites_16: -1651834290
+      Bullet Sprites_17: -1905706010
+      Bullet Sprites_18: -1310829119
+      Bullet Sprites_19: -1242573935
+      Bullet Sprites_2: -1418970676
+      Bullet Sprites_20: -170381552
+      Bullet Sprites_21: 894121100
+      Bullet Sprites_22: -851359447
+      Bullet Sprites_23: 1549038921
+      Bullet Sprites_24: 492502013
+      Bullet Sprites_25: -432809006
+      Bullet Sprites_26: -1733804148
+      Bullet Sprites_27: -1565324410
+      Bullet Sprites_28: 2094034980
+      Bullet Sprites_29: 1460042492
+      Bullet Sprites_3: -1049135353
+      Bullet Sprites_30: -1103527838
+      Bullet Sprites_31: 333162246
+      Bullet Sprites_32: 518534071
+      Bullet Sprites_33: 2059292621
+      Bullet Sprites_34: -1517027585
+      Bullet Sprites_35: 1808146696
+      Bullet Sprites_36: 1320348793
+      Bullet Sprites_37: 1470751596
+      Bullet Sprites_38: -285684370
+      Bullet Sprites_39: 1858195285
+      Bullet Sprites_4: -1272893845
+      Bullet Sprites_40: -1301780494
+      Bullet Sprites_41: -1934872767
+      Bullet Sprites_42: -1103867449
+      Bullet Sprites_43: -1494379840
+      Bullet Sprites_44: 1067426306
+      Bullet Sprites_45: -1642722281
+      Bullet Sprites_46: 437199432
+      Bullet Sprites_47: 775378124
+      Bullet Sprites_48: 1401110
+      Bullet Sprites_49: -1212385898
+      Bullet Sprites_5: 1521973310
+      Bullet Sprites_50: 423864597
+      Bullet Sprites_51: 1416931198
+      Bullet Sprites_52: -492098422
+      Bullet Sprites_53: -1210855993
+      Bullet Sprites_54: 912566488
+      Bullet Sprites_55: 757516456
+      Bullet Sprites_56: 180733314
+      Bullet Sprites_57: -1783526025
+      Bullet Sprites_58: -235262926
+      Bullet Sprites_59: -603387509
+      Bullet Sprites_6: -478698789
+      Bullet Sprites_60: 1296623180
+      Bullet Sprites_61: -1850789345
+      Bullet Sprites_62: -1769948055
+      Bullet Sprites_63: 551570987
+      Bullet Sprites_64: 388910052
+      Bullet Sprites_65: 913492136
+      Bullet Sprites_66: 26890597
+      Bullet Sprites_67: 1456480706
+      Bullet Sprites_68: 1057850298
+      Bullet Sprites_69: -1088893965
+      Bullet Sprites_7: 225461183
+      Bullet Sprites_70: 31664086
+      Bullet Sprites_71: -497058617
+      Bullet Sprites_72: -261600313
+      Bullet Sprites_73: -1913935903
+      Bullet Sprites_74: 1344999449
+      Bullet Sprites_75: -1611785254
+      Bullet Sprites_76: -1734294914
+      Bullet Sprites_77: 1326815261
+      Bullet Sprites_78: -1940109898
+      Bullet Sprites_79: 1287429880
+      Bullet Sprites_8: 1604943340
+      Bullet Sprites_80: 969134106
+      Bullet Sprites_81: -529220039
+      Bullet Sprites_82: 724566649
+      Bullet Sprites_83: 1525752964
+      Bullet Sprites_84: -1842390895
+      Bullet Sprites_85: 1730236805
+      Bullet Sprites_86: -238602348
+      Bullet Sprites_87: 940177894
+      Bullet Sprites_88: -824620744
+      Bullet Sprites_89: -1351685680
+      Bullet Sprites_9: 834224314
+      Bullet Sprites_90: -1857257080
+      Bullet Sprites_91: -1574289105
+      Bullet Sprites_92: 320363440
+      Bullet Sprites_93: -1800732767
+      Bullet Sprites_94: 1215438871
+      Bullet Sprites_95: -1389428455
+      Bullet Sprites_96: -1647740012
+      Bullet Sprites_97: -2078608501
+      Bullet Sprites_98: -667951650
+      Bullet Sprites_99: -1153409221
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
