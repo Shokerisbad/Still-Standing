@@ -40,9 +40,13 @@ public class BulletScript : MonoBehaviour
         }
         else if(collision.gameObject.name.Contains("Limit"))
             Destroy(gameObject, 0.1f);
-        else
+        else if (collision.gameObject.layer == 6)
         {
             Debug.Log(collision.gameObject.name);
+
+            animator.SetTrigger("hasColided");
+            stopped = true;
+            Destroy(gameObject, 0.16f);
         }
     }
 }
