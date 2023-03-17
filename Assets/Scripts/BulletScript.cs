@@ -14,6 +14,8 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        transform.Translate(Vector3.down * 0.5f);
+        transform.Translate(Vector3.left * 0.1f);
     }
 
     void Update()
@@ -24,13 +26,10 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(parentName == "")
-        {
+        /*if(parentName == "")
             parentName = collision.gameObject.name;
-            return;
-        }
-        if (parentName == collision.gameObject.name)
-            return;
+        else if (parentName == collision.gameObject.name)
+            return;*/
 
         if (collision.gameObject.layer == 3) //Walls
         {
@@ -40,7 +39,7 @@ public class BulletScript : MonoBehaviour
         }
         else if(collision.gameObject.name.Contains("Limit"))
             Destroy(gameObject, 0.1f);
-        else if (collision.gameObject.layer == 6)
+        else if (collision.gameObject.layer == 6) //enemy
         {
             Debug.Log(collision.gameObject.name);
 
