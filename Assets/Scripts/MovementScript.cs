@@ -7,6 +7,7 @@ public class MovementScript : MonoBehaviour
     public float velocity = 1f;
     private float x, y, angle;
     private Vector3 mousePosition;
+    private Animator animator;
 
     void Update() 
     {
