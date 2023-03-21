@@ -5,6 +5,7 @@ using System;
 
 public class BulletScript : MonoBehaviour
 {
+    public int damage = 1;
     public float velocity = 10f;
     private string parentName = "";
     private Animator animator;
@@ -12,7 +13,7 @@ public class BulletScript : MonoBehaviour
 
     // Update is called once per frame
     void Start()
-    {
+    {  
         animator = GetComponent<Animator>();
         transform.Translate(Vector3.down * 0.5f);
         transform.Translate(Vector3.left * 0.1f);
@@ -39,13 +40,15 @@ public class BulletScript : MonoBehaviour
         }
         else if(collision.gameObject.name.Contains("Limit"))
             Destroy(gameObject, 0.1f);
-        else if (collision.gameObject.layer == 6) //enemy
+        else if (collision.transform.tag == "Enemy") //enemy
         {
             Debug.Log(collision.gameObject.name);
-
             animator.SetTrigger("hasColided");
             stopped = true;
+            collision.gameObject.GetComponent<EntityPropertiesScript>()
+                .TakeDamage(damage);
             Destroy(gameObject, 0.16f);
+            
         }
     }
 }
