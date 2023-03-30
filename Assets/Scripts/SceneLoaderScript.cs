@@ -4,10 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class SceneLoader : MonoBehaviour
+public class SceneLoaderScript : MonoBehaviour
 {
+   public GameObject fundal;
+   public Canvas canvas;
+
    public void IncarcaScenaUrm()
     {
+        if (Application.platform != RuntimePlatform.Android)
+        {
+            fundal.SetActive(false);
+            canvas.GetComponent<Canvas>().gameObject.SetActive(false);
+        }
+
         int indexScenaCurenta = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(indexScenaCurenta + 1);
     }
@@ -15,7 +24,6 @@ public class SceneLoader : MonoBehaviour
     public void IncarcaScenaStart()
     {
         SceneManager.LoadScene(1);
-
     }
 
     public void QuitGame()
