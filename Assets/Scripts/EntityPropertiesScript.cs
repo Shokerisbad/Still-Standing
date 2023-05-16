@@ -8,6 +8,8 @@ public class EntityPropertiesScript : MonoBehaviour
     public int maxHealth = 10;
     public int health = 0;
     //public bool alive;
+
+
     
 
     // Start is called before the first frame update

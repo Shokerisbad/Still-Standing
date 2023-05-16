@@ -20,6 +20,7 @@ public class HealthDisplay : MonoBehaviour
         
         imager = GetComponent<Image>();
         imager.rectTransform.sizeDelta = new Vector2(0, imager.rectTransform.sizeDelta.y);
+
         
     }
     // Update is called once per frame
@@ -38,6 +39,7 @@ public class HealthDisplay : MonoBehaviour
 
             }
         }
+        
         /*alive = player.GetComponent<EntityPropertiesScript>().Alive();
         if (alive)
         {

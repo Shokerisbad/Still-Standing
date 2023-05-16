@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoaderScript : MonoBehaviour
 {
-   public GameObject fundal;
-   public Canvas canvas;
+    public GameObject fundal;
+    public Canvas canvas;
 
-   public void IncarcaScenaUrm()
+    public void IncarcaScenaUrm()
     {
         if (Application.platform != RuntimePlatform.Android)
         {
@@ -30,4 +30,10 @@ public class SceneLoaderScript : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void IncarcaMeniu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }
