@@ -22,4 +22,7 @@ public class SceneLoader : MonoBehaviour
     {
         Application.Quit();
     }
+
+    
 }
+
