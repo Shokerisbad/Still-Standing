@@ -40,13 +40,11 @@ public class BulletScript : MonoBehaviour
         }
         else if(collision.gameObject.name.Contains("Limit"))
             Destroy(gameObject, 0.1f);
-        else if (collision.transform.tag == "Enemy") //enemy
+        else if (collision.transform.tag.Equals("Enemy") || collision.transform.tag.Equals("Player")) //enemy
         {
-            Debug.Log(collision.gameObject.name);
             animator.SetTrigger("hasColided");
             stopped = true;
-            collision.gameObject.GetComponent<EntityPropertiesScript>()
-                .TakeDamage(damage);
+            collision.gameObject.GetComponent<EntityPropertiesScript>().TakeDamage(damage);
             Destroy(gameObject, 0.16f);
             
         }

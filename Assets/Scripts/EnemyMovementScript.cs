@@ -23,7 +23,7 @@ public class EnemyMovementScript : MonoBehaviour
     void enemyVelocity()
     {
         direction = Aipath.desiredVelocity;
-        transform.right = direction;
+        transform.up = direction;
     }
 
 }
