@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class HealthDisplay : MonoBehaviour
+
+public class WaveBarScript : MonoBehaviour
 {
-    public GameObject player;
+    public WaveManagerScript waveManagerScript;
     private Image image;
 
     // Start is called before the first frame update
@@ -16,10 +17,7 @@ public class HealthDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player == null)
-            return;
-
-        int hp = player.GetComponent<EntityPropertiesScript>().GetHp();
-        image.rectTransform.sizeDelta = new Vector2(400 -  hp * 4, image.rectTransform.sizeDelta.y);
+        int waveDoneAmmount = (int)(((float)waveManagerScript.nrEnemiesKilled / (float)waveManagerScript.wave) * 100);
+        image.rectTransform.sizeDelta = new Vector2(8 * waveDoneAmmount, image.rectTransform.sizeDelta.y);
     }
 }
