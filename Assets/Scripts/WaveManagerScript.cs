@@ -1,6 +1,8 @@
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,11 +13,13 @@ public class WaveManagerScript : MonoBehaviour
     public Vector2 spawnPointS = Vector2.zero;
     public Vector2 spawnPointW = Vector2.zero;
     public Vector2 spawnPointE = Vector2.zero;
+    public TextMeshProUGUI waveText = null;
     public GameObject[] gameObjects = null;
 
     public int wave = 1;
     private int nrEnemiesOnScreen = 0;
-    private int nrEnemiesKilled = 0;
+    [HideInInspector]
+    public int nrEnemiesKilled = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -68,5 +72,9 @@ public class WaveManagerScript : MonoBehaviour
     {
         wave++;
         nrEnemiesKilled = 0;
+
+        if (waveText == null)
+            return;
+        waveText.text = "Wave: " + wave;
     }
 }
