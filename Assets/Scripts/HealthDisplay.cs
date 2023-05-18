@@ -6,6 +6,7 @@ public class HealthDisplay : MonoBehaviour
 {
     public GameObject player;
     private Image image;
+    private float target = 1f, value = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -14,12 +15,20 @@ public class HealthDisplay : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (player == null)
+        {
+            image.fillAmount = 0;
             return;
+        }
 
-        int hp = player.GetComponent<EntityPropertiesScript>().GetHp();
-        image.rectTransform.sizeDelta = new Vector2(400 -  hp * 4, image.rectTransform.sizeDelta.y);
+        target = player.GetComponent<EntityPropertiesScript>().GetHp() / 100f;
+
+
+        if (value > target)
+            value -= (value - target) / 7;
+
+        image.fillAmount = value;
     }
 }
