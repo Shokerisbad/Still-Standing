@@ -5,9 +5,9 @@ using System;
 
 public class BulletScript : MonoBehaviour
 {
-    public int damage = 1;
+    private int damage = 1;
     public float velocity = 10f;
-    private string parentName = "";
+    private string parentTag = "";
     private Animator animator;
     private bool stopped = false;
 
@@ -25,6 +25,12 @@ public class BulletScript : MonoBehaviour
             transform.Translate(Vector3.down * Time.deltaTime * velocity);
     }
 
+    public void setPropreties(int damage, String parentTag)
+    {
+        this.parentTag = parentTag;
+        this.damage = damage;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         /*if(parentName == "")
@@ -40,7 +46,8 @@ public class BulletScript : MonoBehaviour
         }
         else if(collision.gameObject.name.Contains("Limit"))
             Destroy(gameObject, 0.1f);
-        else if (collision.transform.tag.Equals("Enemy") || collision.transform.tag.Equals("Player")) //enemy
+        else if (collision.transform.tag.Equals("Enemy") && parentTag.Equals("Player")
+              || collision.transform.tag.Equals("Player") && parentTag.Equals("Enemy")) //enemy <-> player
         {
             animator.SetTrigger("hasColided");
             stopped = true;
