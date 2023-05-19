@@ -8,9 +8,11 @@ public class GunScript : MonoBehaviour
 { 
     private Vector3 mousePosition, startPos;
     private float timePassed = 0, timeClickStart = 0, reloadStart = 0;
-    public Rigidbody2D bullet;
+    public GameObject bullet;
+    public float range = 10f;
     public float bulletSwayAngle = 0f;
     public float fireRate = 1f;
+    public int bulletDamage = 10;
     public int maxAmmo = 9;
     public int reloadSpeed = 2;
     public int ammo;
@@ -26,6 +28,7 @@ public class GunScript : MonoBehaviour
         }
         catch (Exception e)
         {
+            Debug.Log(e.Message);
             animator = null;
         }
         ammo = maxAmmo;
@@ -63,7 +66,8 @@ public class GunScript : MonoBehaviour
                 ammo--;
                 animator.SetTrigger("isShooting");
                 timePassed = Time.time;
-                Rigidbody2D projectile = Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, UnityEngine.Random.Range(-bulletSwayAngle, bulletSwayAngle)));
+                GameObject projectile = Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, UnityEngine.Random.Range(-bulletSwayAngle, bulletSwayAngle)));
+                projectile.GetComponent<BulletScript>().setPropreties(bulletDamage, gameObject.tag);
             }
 
             if (Input.GetMouseButtonUp(0))
@@ -73,7 +77,8 @@ public class GunScript : MonoBehaviour
                     ammo--;
                     animator.SetTrigger("isShooting");
                     timePassed = Time.time;
-                    Rigidbody2D projectile = Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, UnityEngine.Random.Range(-bulletSwayAngle, bulletSwayAngle)));
+                    GameObject projectile = Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, UnityEngine.Random.Range(-bulletSwayAngle, bulletSwayAngle)));
+                    projectile.GetComponent<BulletScript>().setPropreties(bulletDamage, gameObject.tag);
                 }
                 timeClickStart = 0;
             }
@@ -90,10 +95,10 @@ public class GunScript : MonoBehaviour
         startPos = transform.position - (transform.up * 0.25f);
 
         Boolean sawPlayer = false;
-        for (int i = -10; i < 10; i++)
+        for (int i = -5; i < 5; i++)
         {
-            //Debug.DrawRay(startPos, -(Quaternion.Euler(0, 0, i) * transform.up) * 10);
-            RaycastHit2D hit = Physics2D.Raycast(startPos, -(Quaternion.Euler(0, 0, i) * transform.up), 10, LayerMask.GetMask("Player"));
+            Debug.DrawRay(startPos, (Quaternion.Euler(0, 0, i) * transform.up) * range);
+            RaycastHit2D hit = Physics2D.Raycast(startPos, (Quaternion.Euler(0, 0, i) * transform.up), 10, LayerMask.GetMask("Player"));
             if (hit.collider != null && hit.collider.transform.tag.Equals("Player")) { 
                 sawPlayer = true;
                 break;
@@ -111,9 +116,11 @@ public class GunScript : MonoBehaviour
         if (!reloading && Time.time - timePassed >= fireRate)
         {
             ammo--;
-            //animator.SetTrigger("isShooting");
             timePassed = Time.time;
-            Rigidbody2D projectile = Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, UnityEngine.Random.Range(-bulletSwayAngle, bulletSwayAngle)));
+            if (animator != null)
+                animator.SetTrigger("isShooting");
+            GameObject projectile = Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 180 + UnityEngine.Random.Range(-bulletSwayAngle, bulletSwayAngle)));
+            projectile.GetComponent<BulletScript>().setPropreties(bulletDamage, gameObject.tag);
         }
 
         if (!reloading && ammo == 0)

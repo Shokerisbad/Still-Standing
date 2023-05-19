@@ -9,6 +9,7 @@ public class LegsScript : MonoBehaviour
     private Animator animator;
     private float x, y, angle;
     public float dampener = 0.5f;
+    private Quaternion rotation = Quaternion.identity;
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +20,8 @@ public class LegsScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        transform.position = player.transform.position;
-        transform.Translate(Vector3.down * 0f);
-        transform.Translate(Vector3.right * 0f);
-
-        mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0)) - transform.position;
-        angle = Mathf.Atan2(mousePosition.x, mousePosition.y) * Mathf.Rad2Deg;
+    {   
+        angle = player.transform.eulerAngles.z;
 
         if (x > 0 && y > 0)
             angle = 45;
@@ -45,19 +41,20 @@ public class LegsScript : MonoBehaviour
             angle = 180;
         else
         {
-            if (angle >= -45 && angle <= 45)
-                angle = 180;
+            if (angle >= 0 && angle <= 45)
+                angle = 0;
             else if (angle >= 45 && angle <= 135)
                 angle = 270;
-            else if (angle >= -135 && angle <= -45)
+            else if (angle >= 135 && angle <= 225)
+                angle = 180;
+            else if (angle > 225 && angle <= 315)
                 angle = 90;
-            else if ((angle > 135 && angle < 180) || (angle > -180 && angle < -135))
-                angle = 0;
             else
                 angle = 0;
         }
 
-        transform.rotation = Quaternion.AngleAxis(angle + 180, -Vector3.forward);
+        rotation = Quaternion.RotateTowards(rotation, Quaternion.AngleAxis(angle + 180, -Vector3.forward), 720 * Time.deltaTime);
+        transform.rotation = rotation;
     }
 
     void FixedUpdate()
@@ -65,8 +62,6 @@ public class LegsScript : MonoBehaviour
         animator.ResetTrigger("isMoving");
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
-
-        
 
         if (x != 0 || y != 0)
             animator.SetTrigger("isMoving");
