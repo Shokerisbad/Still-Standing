@@ -1,3 +1,4 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ public class LegsScript : MonoBehaviour
 {
     private Vector3 mousePosition;
     public GameObject player;
-    private Animator animator;
+    private Animator animator = null;
     private float x, y, angle;
     public float dampener = 0.5f;
     private Quaternion rotation = Quaternion.identity;
@@ -15,7 +16,11 @@ public class LegsScript : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        animator.SetFloat("velocity", player.GetComponent<MovementScript>().velocity * dampener);
+
+        if (player.tag.Equals("Player"))
+            animator.SetFloat("velocity", player.GetComponent<MovementScript>().velocity * dampener);
+        else if (player.tag.Equals("Enemy"))
+            animator.SetFloat("velocity", player.GetComponent<AIPath>().maxSpeed * dampener);
     }
 
     // Update is called once per frame
@@ -59,11 +64,24 @@ public class LegsScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        animator.ResetTrigger("isMoving");
-        x = Input.GetAxis("Horizontal");
-        y = Input.GetAxis("Vertical");
+        #pragma warning disable CS0436 // Type conflicts with imported type
 
-        if (x != 0 || y != 0)
+        animator.ResetTrigger("isMoving");
+
+        if (player.tag.Equals("Player"))
+        {
+            x = Input.GetAxis("Horizontal");
+            y = Input.GetAxis("Vertical");
+
+            if (x != 0 || y != 0)
+                animator.SetTrigger("isMoving");
+        }
+        else if (player.tag.Equals("Enemy") && player.GetComponent<EnemyMovementScript>().getVelocity() != 0)
+        {
+            Debug.Log("awfq");
             animator.SetTrigger("isMoving");
+        }
+        
+        #pragma warning restore CS0436 // Type conflicts with imported type
     }
 }
