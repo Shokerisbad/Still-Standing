@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Soundtrack : MonoBehaviour
 {
+    [SerializeField] Slider sliderVolum;
+
     private AudioSource sursa;
     public AudioClip[] melodii;
     public float volum;
@@ -24,6 +28,7 @@ public class Soundtrack : MonoBehaviour
         {
             SchimbaMuzica(1);
         }
+        SchimbaVolumul();
     }
 
     // Update is called once per frame
@@ -41,7 +46,9 @@ public class Soundtrack : MonoBehaviour
         }
         
         ResetareaAmestecarii();
-       
+        SchimbaVolumul();
+
+
     }
     public void SchimbaMuzica(int canteculAles)
     {
@@ -82,5 +89,9 @@ public class Soundtrack : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
+    }
+    private void SchimbaVolumul()
+    {
+        volum = sliderVolum.value;
     }
 }
