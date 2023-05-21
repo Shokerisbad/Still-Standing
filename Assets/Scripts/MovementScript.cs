@@ -8,7 +8,6 @@ public class MovementScript : MonoBehaviour
     public int rotationVelocity = 360;
     private float x, y, angle;
     private Vector3 mousePosition, input;
-    private Animator animator;
 
     void Update() 
     {

@@ -33,11 +33,6 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        /*if(parentName == "")
-            parentName = collision.gameObject.name;
-        else if (parentName == collision.gameObject.name)
-            return;*/
-
         if (collision.gameObject.layer == 3) //Walls
         {
             animator.SetTrigger("hasColided");

@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-    private Camera camera;
     private float aspect, windowAspect, scaleHeight, scaleWidth, sWidth, sHeight;
 
     // Start is called before the first frame update
     void Start()
     {
-        camera = GetComponent<Camera>();
         if (Application.platform != RuntimePlatform.Android)
         {
-            camera.transform.Find("BorderW").gameObject.SetActive(false);
-            camera.transform.Find("BorderE").gameObject.SetActive(false);
+            Camera.main.transform.Find("BorderW").gameObject.SetActive(false);
+            Camera.main.transform.Find("BorderE").gameObject.SetActive(false);
         }
 
         aspect = 16.0f / 9.0f;
@@ -44,25 +42,25 @@ public class CameraScript : MonoBehaviour
 
         if (scaleHeight < 1.0f)
         {
-            Rect rect = camera.rect;
+            Rect rect = Camera.main.rect;
 
             rect.width = 1.0f;
             rect.height = scaleHeight;
             rect.x = 0;
             rect.y = (1.0f - scaleHeight) / 2.0f;
 
-            camera.rect = rect;
+            Camera.main.rect = rect;
         }
         else
         {
-            Rect rect = camera.rect;
+            Rect rect = Camera.main.rect;
 
             rect.width = scaleWidth;
             rect.height = 1.0f;
             rect.x = (1.0f - scaleWidth) / 2.0f;
             rect.y = 0;
 
-            camera.rect = rect;
+            Camera.main.rect = rect;
         }
     }
 }

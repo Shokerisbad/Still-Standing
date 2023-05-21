@@ -27920,6 +27920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 4
+  rotationVelocity: 360
 --- !u!50 &1806703216
 Rigidbody2D:
   serializedVersion: 4
@@ -27954,7 +27955,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1446183234925297665, guid: a5838da7aa91c504693289f4d0bd882e, type: 3}
-  FireRate: 0.5
+  range: 10
+  bulletSwayAngle: 0
+  fireRate: 1
+  bulletDamage: 10
+  maxAmmo: 9
+  reloadSpeed: 2
+  ammo: 0
 --- !u!95 &1806703219
 Animator:
   serializedVersion: 5
@@ -27988,9 +27995,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9138d55e9e4a614a8b7e8f61d52e64c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  contactDamage: 2
   maxHealth: 10
   health: 10
+  shakeIntensityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  shakeTime: 1
+  flashIntensityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  flashColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1808662765
 GameObject:
   m_ObjectHideFlags: 0
@@ -31873,9 +31894,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9138d55e9e4a614a8b7e8f61d52e64c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  contactDamage: 2
   maxHealth: 10
   health: 10
+  shakeIntensityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  shakeTime: 1
+  flashIntensityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  flashColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2124006867
 GameObject:
   m_ObjectHideFlags: 0
