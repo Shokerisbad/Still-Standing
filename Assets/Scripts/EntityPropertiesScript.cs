@@ -29,7 +29,22 @@ public class EntityPropertiesScript : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Destroy(gameObject, 0.1f);
+            if (gameObject.tag.Equals("Player"))
+            {
+                Time.timeScale = 0f;
+                transform.GetComponent<Animator>().Play("Player Death");
+                transform.GetComponent<MovementScript>().enabled = false;
+                transform.GetComponent<GunScript>().enabled = false;
+                gameObject.tag = "Untagged";
+                Destroy(gameObject, 2.5f);
+            }
+            else
+            {
+                /*transform.GetComponent<CircleCollider2D>().enabled = false;
+                transform.GetComponent<Rigidbody2D>().simulated = false;
+                transform.GetComponent<Animator>().Play("Enemy Death");*/
+                Destroy(gameObject, 0.1f);
+            }
             return;
         }
 

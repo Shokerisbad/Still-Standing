@@ -37,7 +37,7 @@ public class GunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(animator != null) 
+        if (animator != null)
             animator.ResetTrigger("isShooting");
 
         if (transform.name.Equals("Player"))
