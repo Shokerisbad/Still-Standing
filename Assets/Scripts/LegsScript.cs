@@ -77,10 +77,7 @@ public class LegsScript : MonoBehaviour
                 animator.SetTrigger("isMoving");
         }
         else if (player.tag.Equals("Enemy") && player.GetComponent<EnemyMovementScript>().getVelocity() != 0)
-        {
-            Debug.Log("awfq");
             animator.SetTrigger("isMoving");
-        }
         
         #pragma warning restore CS0436 // Type conflicts with imported type
     }

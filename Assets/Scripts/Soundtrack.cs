@@ -34,6 +34,10 @@ public class Soundtrack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (sliderVolum == null)
+        {
+            sliderVolum = GameObject.Find("Slider Music").GetComponent<Slider>();
+        }
         if (sursa.isPlaying)
         {
             timerPiesa += 1 * Time.deltaTime;
