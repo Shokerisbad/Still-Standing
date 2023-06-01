@@ -40,9 +40,6 @@ public class EntityPropertiesScript : MonoBehaviour
             }
             else
             {
-                /*transform.GetComponent<CircleCollider2D>().enabled = false;
-                transform.GetComponent<Rigidbody2D>().simulated = false;
-                transform.GetComponent<Animator>().Play("Enemy Death");*/
                 Destroy(gameObject, 0.1f);
             }
             return;
