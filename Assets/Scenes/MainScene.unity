@@ -41451,7 +41451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contactDamage: 2
-  maxHealth: 10
+  maxHealth: 100
   health: 0
   shakeIntensityCurve:
     serializedVersion: 2
