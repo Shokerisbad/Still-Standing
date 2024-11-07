@@ -1,4 +1,5 @@
 using System.Collections;
+using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,10 +13,18 @@ public class EntityPropertiesScript : MonoBehaviour
     public float shakeTime = 1f;
     public AnimationCurve flashIntensityCurve;
     public Color flashColor = Color.white;
-
+    private Camera _camera;
+    
+    public class EntityData : EntityPropertiesScript {
+        public new int health;
+        public Vector3 position;
+        public string entityType;
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
+        _camera = Camera.main;
         health = maxHealth;
     }
 
@@ -67,17 +76,17 @@ public class EntityPropertiesScript : MonoBehaviour
 
     private IEnumerator ScreenShake()
     {
-        Vector3 startPosition = Camera.main.transform.position;
+        Vector3 startPosition = _camera.transform.position;
         float time = 0f, strength = 0f;
 
         while (time < shakeTime) {
             time += Time.deltaTime;
             strength = shakeIntensityCurve.Evaluate(time / shakeTime);
-            Camera.main.transform.position = startPosition + Random.insideUnitSphere * strength;
+            _camera.transform.position = startPosition + Random.insideUnitSphere * strength;
             yield return null;
         }
 
-        Camera.main.transform.position = startPosition;
+        _camera.transform.position = startPosition;
     }
 
     private IEnumerator DamageFlash()
@@ -111,4 +120,33 @@ public class EntityPropertiesScript : MonoBehaviour
         else if (gameObject.tag.Equals("Player"))
             transform.position = Vector2.MoveTowards(transform.position, transform.position + transform.up * 0.3f, 2f * Time.deltaTime);
     }
+
+    public void SaveEntityData()
+    {
+        EntityData data = gameObject.AddComponent<EntityData>();
+        data.health = health;
+        data.position = transform.position;
+        data.entityType =
+            gameObject.tag; // Assume tag represents type (e.g., "Player", "Enemy") to remember what we're saving      
+        
+        string json = JsonUtility.ToJson(data);                                                           
+        File.WriteAllText(Application.persistentDataPath + $"/{gameObject.name}_data.json", json);        
+    }
+  
+    public void LoadEntityData() {
+        string path = Application.persistentDataPath + $"/{gameObject.name}_data.json";
+        if (File.Exists(path)) {
+            string json = File.ReadAllText(path);
+            EntityData data = JsonUtility.FromJson<EntityData>(json);
+
+            this.health = data.health;
+            transform.position = data.position;
+        } else {
+            Debug.LogWarning("Save file not found.");
+        }
+    }
+  
+   
+    
+    
 }

@@ -41,7 +41,7 @@ public class SceneLoaderScript : MonoBehaviour
 
     public void IncarcaScenaStart()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("MainScene");
     }
 
     public void QuitGame()

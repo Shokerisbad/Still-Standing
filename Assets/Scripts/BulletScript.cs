@@ -22,7 +22,7 @@ public class BulletScript : MonoBehaviour
     void Update()
     {
         if(!stopped)    
-            transform.Translate(Vector3.down * Time.deltaTime * velocity);
+            transform.Translate(Vector3.down * (Time.deltaTime * velocity));
     }
 
     public void setPropreties(int damage, String parentTag)
